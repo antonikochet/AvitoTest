@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		A507E501275C2382008ECE38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A507E500275C2382008ECE38 /* AppDelegate.swift */; };
 		A507E503275C2382008ECE38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A507E502275C2382008ECE38 /* SceneDelegate.swift */; };
-		A507E505275C2382008ECE38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A507E504275C2382008ECE38 /* ViewController.swift */; };
-		A507E508275C2382008ECE38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A507E506275C2382008ECE38 /* Main.storyboard */; };
+		A507E505275C2382008ECE38 /* CompanyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A507E504275C2382008ECE38 /* CompanyCollectionViewController.swift */; };
 		A507E50A275C2384008ECE38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A507E509275C2384008ECE38 /* Assets.xcassets */; };
 		A507E50D275C2384008ECE38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A507E50B275C2384008ECE38 /* LaunchScreen.storyboard */; };
+		A507E517275C2796008ECE38 /* ParseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A507E516275C2796008ECE38 /* ParseModel.swift */; };
+		A5C8C085275E305100D589F8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8C084275E305100D589F8 /* NetworkService.swift */; };
+		A5C8C08A275E6EC200D589F8 /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8C088275E6EC200D589F8 /* EmployeeCell.swift */; };
+		A5C8C08B275E6EC200D589F8 /* EmployeeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5C8C089275E6EC200D589F8 /* EmployeeCell.xib */; };
+		A5C8C08D275EB2EC00D589F8 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C8C08C275EB2EC00D589F8 /* HeaderCollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A507E4FD275C2382008ECE38 /* AvitoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvitoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A507E500275C2382008ECE38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A507E502275C2382008ECE38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A507E504275C2382008ECE38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A507E507275C2382008ECE38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A507E504275C2382008ECE38 /* CompanyCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCollectionViewController.swift; sourceTree = "<group>"; };
 		A507E509275C2384008ECE38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A507E50C275C2384008ECE38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A507E50E275C2384008ECE38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A507E516275C2796008ECE38 /* ParseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseModel.swift; sourceTree = "<group>"; };
+		A5C8C084275E305100D589F8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		A5C8C088275E6EC200D589F8 /* EmployeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
+		A5C8C089275E6EC200D589F8 /* EmployeeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeCell.xib; sourceTree = "<group>"; };
+		A5C8C08C275EB2EC00D589F8 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		A507E4FF275C2382008ECE38 /* AvitoTest */ = {
 			isa = PBXGroup;
 			children = (
+				A507E519275C2878008ECE38 /* Controllers */,
+				A507E518275C286B008ECE38 /* Services */,
+				A507E515275C2728008ECE38 /* Views */,
+				A507E514275C271F008ECE38 /* Models */,
 				A507E500275C2382008ECE38 /* AppDelegate.swift */,
 				A507E502275C2382008ECE38 /* SceneDelegate.swift */,
-				A507E504275C2382008ECE38 /* ViewController.swift */,
-				A507E506275C2382008ECE38 /* Main.storyboard */,
 				A507E509275C2384008ECE38 /* Assets.xcassets */,
-				A507E50B275C2384008ECE38 /* LaunchScreen.storyboard */,
 				A507E50E275C2384008ECE38 /* Info.plist */,
 			);
 			path = AvitoTest;
+			sourceTree = "<group>";
+		};
+		A507E514275C271F008ECE38 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A507E516275C2796008ECE38 /* ParseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A507E515275C2728008ECE38 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A507E50B275C2384008ECE38 /* LaunchScreen.storyboard */,
+				A5C8C088275E6EC200D589F8 /* EmployeeCell.swift */,
+				A5C8C089275E6EC200D589F8 /* EmployeeCell.xib */,
+				A5C8C08C275EB2EC00D589F8 /* HeaderCollectionReusableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A507E518275C286B008ECE38 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A5C8C084275E305100D589F8 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A507E519275C2878008ECE38 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A507E504275C2382008ECE38 /* CompanyCollectionViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +169,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C8C08B275E6EC200D589F8 /* EmployeeCell.xib in Resources */,
 				A507E50D275C2384008ECE38 /* LaunchScreen.storyboard in Resources */,
 				A507E50A275C2384008ECE38 /* Assets.xcassets in Resources */,
-				A507E508275C2382008ECE38 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +182,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A507E505275C2382008ECE38 /* ViewController.swift in Sources */,
+				A5C8C08D275EB2EC00D589F8 /* HeaderCollectionReusableView.swift in Sources */,
+				A5C8C085275E305100D589F8 /* NetworkService.swift in Sources */,
+				A507E505275C2382008ECE38 /* CompanyCollectionViewController.swift in Sources */,
 				A507E501275C2382008ECE38 /* AppDelegate.swift in Sources */,
+				A5C8C08A275E6EC200D589F8 /* EmployeeCell.swift in Sources */,
 				A507E503275C2382008ECE38 /* SceneDelegate.swift in Sources */,
+				A507E517275C2796008ECE38 /* ParseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A507E506275C2382008ECE38 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A507E507275C2382008ECE38 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A507E50B275C2384008ECE38 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +332,9 @@
 				DEVELOPMENT_TEAM = Q8BJ8563H3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AvitoTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Avito;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,9 +360,9 @@
 				DEVELOPMENT_TEAM = Q8BJ8563H3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AvitoTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Avito;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
